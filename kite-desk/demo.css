@@ -13,3 +13,15 @@
 #kd-input{flex:1;border-radius:20px;border:0;padding:9px 14px;background:#2a3942;color:#e9edef}
 #kd-form button{border:0;border-radius:50%;width:40px;background:#00a884;color:#fff;font-size:16px;cursor:pointer}
 #faq details{background:var(--p);border:1px solid var(--l);border-radius:14px;padding:14px 18px;margin:10px 0}#faq summary{cursor:pointer;font-weight:600}
+.kd-langsel{display:inline-flex;align-items:center;gap:6px;font-size:14px}
+.kd-langsel select{background:var(--p,#151935);color:inherit;border:1px solid var(--l,#262b4d);border-radius:10px;padding:5px 8px;font:inherit}
+#langs ul{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+#langs a{display:inline-block;padding:6px 12px;border:1px solid var(--l,#262b4d);border-radius:14px;text-decoration:none}
+#langs a[aria-current]{border-color:#25d366;color:#25d366}
+[dir=rtl] .kd-badge{margin-left:0;margin-right:auto}
+[dir=rtl] .kd-msg small{text-align:left}
+[dir=rtl] #kd-form button{transform:scaleX(-1)}
+[dir=rtl] .wa-fab{right:auto;left:16px}
+[dir=rtl] .skip{left:auto;right:-9999px}[dir=rtl] .skip:focus{right:8px}
+@media(max-width:760px){.kd-langsel{margin-inline-start:auto}}
+@media(max-width:760px){.kd-langsel select{max-width:120px;font-size:13px}.brand span{white-space:nowrap}}
