@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Writing samples | Kitebuild Studio</title>
+<meta name="description" content="Technical writing and copywriting samples from Kitebuild Studio, Dubai.">
+<link rel="canonical" href="https://aaron11998.github.io/kitebuild-studio/writing/">
+<meta name="theme-color" content="#0b0d18">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/style.css">
+<style>.sample{max-width:46rem}.sample pre{overflow:auto;padding:1rem;border-radius:8px;background:rgba(255,255,255,.06)}.sample table{border-collapse:collapse}.sample td,.sample th{border:1px solid rgba(255,255,255,.15);padding:.4rem .7rem;text-align:left}.sample li{margin:.35rem 0}.note{opacity:.75;font-style:italic}</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="wrap navin">
+ <a href="../" class="brand" aria-label="Kitebuild Studio home"><img src="../assets/mark.svg" alt="" width="32" height="32"><span>Kitebuild <b>Studio</b></span></a>
+ <button class="menu" aria-expanded="false" aria-controls="links" aria-label="Menu">☰</button>
+ <nav id="links" aria-label="Main"><a href="#automation">Automation explainer</a><a href="#readme">README</a><a href="#salon">Landing copy</a><a href="../">Home</a><a class="btn sm" href="../#contact">Get a quote</a></nav>
+</div></header>
+<main id="main">
+<section class="hero"><div class="wrap">
+ <p class="eyebrow">Technical writing · Copywriting</p>
+ <h1>Writing samples</h1>
+ <p class="lead">Short samples of our own studio writing: an explainer, a project README and landing-page copy. These are demo pieces, not client work.</p>
+</div></section>
+
+<section id="automation" class="wrap sample"><p class="eyebrow">Blog explainer</p>
+<h2>Five office tasks a small business should automate first</h2>
+<p>Many small businesses lose time to copy-and-paste work. Here's where a simple script can help first.</p>
+<ol>
+<li><strong>Invoice reminders.</strong> A script reads your unpaid invoices from a spreadsheet and emails a polite reminder on day 7 and day 14.</li>
+<li><strong>Booking confirmations.</strong> Each new booking gets a confirmation message and a reminder the day before.</li>
+<li><strong>Daily sales summary.</strong> Totals from your POS export land in your inbox at 9pm. You don't have to open a spreadsheet.</li>
+<li><strong>Lead capture.</strong> Website form entries go straight into one sheet, tagged by source, so none get lost in email.</li>
+<li><strong>Stock alerts.</strong> When an item drops below your reorder level, you get a WhatsApp or email alert.</li>
+</ol>
+<p>Each of these is a small, scheduled script. Start with the one that annoys you most.</p>
+</section>
+
+<section id="readme" class="wrap sample"><p class="eyebrow">README sample</p>
+<h2>kite-desk</h2>
+<blockquote><p>An AI receptionist for small businesses on WhatsApp. It answers common questions and offers a human handoff. Booking flows are in progress.</p></blockquote>
+<h3>Quick start</h3>
+<pre><code>git clone https://github.com/aaron11998/kite-desk
+cd kite-desk &amp;&amp; cp .env.example .env   # add GEMINI_API_KEY and WhatsApp settings
+npm install &amp;&amp; npm start</code></pre>
+<h3>How it works</h3>
+<ol>
+<li>WhatsApp sends each incoming message to <code>/webhook</code>.</li>
+<li>The server passes the message and the business's config file to Gemini, which drafts the reply.</li>
+<li>If the model is unsure, or the customer asks for a person, it offers a human handoff.</li>
+<li>Booking handling and handoff routing are still on the to-do list.</li>
+</ol>
+<h3>Configuration</h3>
+<table><thead><tr><th>Variable</th><th>Purpose</th></tr></thead><tbody>
+<tr><td><code>GEMINI_API_KEY</code></td><td>Server-side only. Never commit it.</td></tr>
+<tr><td><code>GEMINI_MODEL</code></td><td>Model name (default <code>gemini-1.5-flash</code>)</td></tr>
+<tr><td><code>BUSINESS_CONFIG</code></td><td>A JSON file with hours, prices and FAQs (default <code>config/demo-salon.json</code>)</td></tr>
+<tr><td><code>WHATSAPP_*</code></td><td>Verify token, access token and phone number ID for the WhatsApp Cloud API</td></tr>
+</tbody></table>
+<h3>Status</h3>
+<p>Early development. It isn't connected to a live WhatsApp number yet.</p>
+</section>
+
+<section id="salon" class="wrap sample"><p class="eyebrow">Landing-page copy · fictional salon</p>
+<h2>Fresh cuts in Karama, booked in one tap</h2>
+<p>Walk-ins are welcome, but why wait? Message us on WhatsApp, pick a time, and your chair is ready when you arrive.</p>
+<p><strong>Haircut</strong> AED 35 · <strong>Beard trim</strong> AED 20 · <strong>Cut + beard</strong> AED 50 · <strong>Kids' cut</strong> AED 25</p>
+<h3>Why regulars keep coming back</h3>
+<ul><li>Experienced barbers</li><li>Clean tools for every client</li><li>Open late most days</li></ul>
+<p><span class="btn">Book on WhatsApp</span></p>
+<p class="note">This is a demo page. The salon is fictional; prices and details are placeholders.</p>
+</section>
+</main>
+<footer class="wrap foot"><p>© <span id="y">2026</span> Kitebuild Studio · Dubai, UAE</p></footer>
+<script src="../assets/main.js" defer></script>
+</body></html>
