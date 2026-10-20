@@ -2,12 +2,9 @@
 
 Static one-page site (HTML/CSS/JS, no build step). Open `index.html` locally to preview.
 
-## Before launch (TBDs)
-- `CONTACT_EMAIL_TBD`: the mailto link in `index.html`
-- WhatsApp number: `[add number]` in the Contact section
-- `FORM_ID_TBD`: Formspree form ID in the form `action` (create a free form at formspree.io)
-- Fiverr / Contra profile URLs: the `href="#"` links with `data-tbd`
-- `SITE_URL_TBD`: canonical / og:url / og:image in `<head>`
+## Contact
+- WhatsApp: +971 50 776 1066 (wa.me/971507761066); the contact form opens WhatsApp with the fields prefilled, with a mailto fallback.
+- Email: kitebuildstudio@mail.grokbot.com
 - Music/video section: `<!-- MEDIA SLOT -->` placeholder after Work samples
 
 ## Free hosting: GitHub Pages
